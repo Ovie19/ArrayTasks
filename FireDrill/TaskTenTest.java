@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class TaskTenTest {
     @Test
-    public void testThatTaskNineReturnsEachElementInAnArrayReplacedByTheRunningTotal() {
+    public void testThatTaskTenReturnsEachElementInAnArrayReplacedByTheRunningTotal() {
         int[] numbers = {1, 2, 3, 4};
 
         int[] expected = TaskTen.taskTen(numbers);

@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TaskElevenTest {
     @Test
-    public void testThatTaskNineReturnsTheSecondLargestElementInAnArray() {
+    public void testThatTaskElevenReturnsTheSecondLargestElementInAnArray() {
         int[] numbers = {1, 2, 3, 4};
 
         int expected = TaskEleven.taskEleven(numbers);

@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class TaskNineTest {
     @Test
-    public void testThatTaskNineReturnsOneSortedArrayOfTwoArrays() {
+    public void testThatTaskNineReturnsOneSortedArrayOfTwoCombinedArrays() {
         int[] arrayOne = {1, 2, 3};
         int[] arrayTwo = {4, 5, 6};
 

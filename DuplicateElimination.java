@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class DuplicateElimination {
@@ -13,13 +14,19 @@ public class DuplicateElimination {
         int count = 0;
 
         while(count < 10) {
-            int number;
+            int number = 0;
             do {
-                System.out.print("Enter a number between 10 - 100: ");
-                number = inputCollector.nextInt();
+                try {
+                    System.out.print("Enter a number between 10 - 100: ");
+                    number = inputCollector.nextInt();
 
-                if (number < 10 || number > 100)
-                    System.out.println("Invalid number");
+                    if (number < 10 || number > 100)
+                        System.out.println("Invalid number");
+                } catch(InputMismatchException e) {
+                    System.out.println("Enter a valid number!!!");
+                    inputCollector.nextLine();
+                }
+
             } while(number < 10 || number > 100);
 
             array[number]++;
